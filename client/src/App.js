@@ -4,12 +4,12 @@ import './App.css';
 class App extends Component {
 
   componentDidMount() {
-    fetch("/api/hello")
+    fetch('/api/hello')
       .then(function(response) {
         return response.json();
       })
       .then(function(json) {
-        console.log("GET /api/hello:", json);
+        console.log('GET /api/hello:', json);
       });
   }
 
